@@ -1,0 +1,13 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	6TH               5028
+//	3RD               5010
+//	8TH               5038
+//	TOPLEFT           5000
+//	5TH               5020
+//	7TH               5030
+//	4TH               5018
+//	2ND               5008
+

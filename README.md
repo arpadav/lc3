@@ -16,6 +16,8 @@ Little Computer 3 (LC3) Assembly Projects. Folders labeled `Program[X]` are for 
     4. Load all `.obj` files
     5. Program should be ready to run, either click Continue or type `continue`
 
+3. Individual program descriptions are in comments of `.asm` files
+
 \
 **Loading Commands**
 - `as` - assemble LC3 assembly (`.asm`) files

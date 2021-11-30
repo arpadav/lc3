@@ -6,6 +6,8 @@
 ; --- if input is 10 and 11, it will just be 10
 ; --- largest sum (i think) is 0 to 99 = 1683
 
+; equivalent to sum(a:3:b) in MATLAB, where a and b are 0-99
+
 	.ORIG x3000
 	BR FIRST
 	

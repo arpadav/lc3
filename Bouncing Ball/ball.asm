@@ -93,14 +93,14 @@ GETTINGNUM
 TMR				.FILL xFE08
 TMI				.FILL xFE0A
 ONESEC			.FILL #10000		; one second in milliseconds
-TINT			.FILL #10		; time interval (in milliseconds)
+TINT			.FILL #30		; time interval (in milliseconds)
 DELTAT			.BLKW #1
 DIVISOR			.BLKW #1
 
 KBSRPtr			.FILL xFE00		; using I/O, keyboard status register
 KBDRPtr			.FILL xFE02		; using I/O, keyboard data register
 
-; other
+
 INPUT			.BLKW x0010
 CLEARING		.FILL #0
 NEG30			.FILL #-48
@@ -331,13 +331,13 @@ ENDBOUNCE
 ; BALL stats
 BALLADRSCRDS	.FILL x5000		; address where painted ball pixels are stored
 BALLINITX		.FILL #64		; starting x position. #64 for center
-BALLINITY		.FILL #50		; starting y position (+y = up and -y = down) #61 for center
+BALLINITY		.FILL #100		; starting y position (+y = up and -y = down) #61 for center
 BALLPOS			.BLKW #1		; balls position used in painting
 BALLRADIUS		.FILL #12		; ball radius
-BALLCOLOUR		.FILL x001F		; ball colour = blue
+BALLCOLOUR		.FILL xF800		; ball colour = blue
 BALLELASTICITY	.FILL #0		; negative = bouncing will fade. 0 = constant bouncing. positive = bouncing increases (dont use positive...)
 BALLV			.FILL x0001		; ft/s, initially down1
-GRAVITY			.FILL #5		; 40 ft/second^2. 1ft = 1 pixel (pos = downward and neg = upward ikik)
+GRAVITY			.FILL #3		; 40 ft/second^2. 1ft = 1 pixel (pos = downward and neg = upward ikik)
 BOUNCING		.BLKW #1		; 1 if bouncing, 0 if not bouncing
 
 ASCIIA			.FILL xFF9F
